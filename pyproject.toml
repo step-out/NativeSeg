@@ -1,0 +1,55 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "nativeseg"
+version = "1.0.0"
+description = "NativeSeg: Native Vision Language Segmentation of 3D Computed Tomography via Spatial Visual Tokens and Verified Local Zoom"
+readme = "README.md"
+license = {text = "Apache-2.0"}
+requires-python = ">=3.11"
+authors = [
+  {name = "Chengqian Ma", email = "machengqian25@stu.pku.edu.cn"},
+  {name = "Gaole Dai"},
+  {name = "Zijie Meng"},
+  {name = "Weixuan Jin"},
+  {name = "Yijie Du"},
+  {name = "Yuexiao Ma"},
+  {name = "Xiawu Zheng"},
+  {name = "Fei Chao"},
+]
+dependencies = [
+  "numpy>=1.25,<3",
+  "scipy>=1.11,<2",
+  "scikit-image>=0.22",
+  "scikit-learn>=1.4",
+  "nibabel>=5.2",
+  "pydicom>=2.4",
+  "torch>=2.5",
+  "torchvision>=0.20",
+  "transformers>=5.8.0",
+  "accelerate>=1.2",
+  "peft>=0.14",
+  "safetensors>=0.4",
+  "huggingface-hub>=0.26",
+]
+
+[project.scripts]
+nativeseg-preprocess = "nativeseg.preprocess:main"
+nativeseg-train = "nativeseg.train:main"
+nativeseg-predict = "nativeseg.predict:main"
+nativeseg-infer = "nativeseg.inference_nifti:main"
+nativeseg-eval = "nativeseg.evaluate:main"
+nativeseg-sweep = "nativeseg.sweep:main"
+nativeseg-assess = "nativeseg.assess_eval:main"
+nativeseg-stats = "nativeseg.stats:main"
+nativeseg-lrn = "nativeseg.lrn_baseline:main"
+nativeseg-medsam2 = "nativeseg.medsam2_baseline:main"
+nativeseg-smoke = "nativeseg.smoke_test:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+nativeseg = ["resources/*.json"]

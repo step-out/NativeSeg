@@ -1,0 +1,32 @@
+cff-version: 1.2.0
+title: "NativeSeg: Native Vision Language Segmentation of 3D Computed Tomography via Spatial Visual Tokens and Verified Local Zoom"
+message: "If you use NativeSeg in your research, please cite our paper."
+type: software
+license: Apache-2.0
+repository-code: "https://github.com/step-out/NativeSeg"
+authors:
+  - family-names: Ma
+    given-names: Chengqian
+    email: machengqian25@stu.pku.edu.cn
+    affiliation: Peking University
+  - family-names: Dai
+    given-names: Gaole
+    affiliation: Peking University
+  - family-names: Meng
+    given-names: Zijie
+    affiliation: Peking University
+  - family-names: Jin
+    given-names: Weixuan
+    affiliation: Tsinghua University
+  - family-names: Du
+    given-names: Yijie
+    affiliation: Institute of Automation, Chinese Academy of Sciences
+  - family-names: Ma
+    given-names: Yuexiao
+    affiliation: Nanyang Technological University
+  - family-names: Zheng
+    given-names: Xiawu
+    affiliation: Xiamen University
+  - family-names: Chao
+    given-names: Fei
+    affiliation: Xiamen University
