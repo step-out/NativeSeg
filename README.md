@@ -5,6 +5,7 @@ Official PyTorch implementation and pretrained checkpoints for **NativeSeg**.
 **Authors:** Chengqian Ma, Gaole Dai, Zijie Meng, Weixuan Jin, Yijie Du, Yuexiao Ma, Xiawu Zheng, Fei Chao  
 **Affiliations:** Peking University, Tsinghua University, Institute of Automation (CAS), Nanyang Technological University, Xiamen University
 
+- **ArXiv:** [https://arxiv.org/abs/2611.24443](https://arxiv.org/abs/2611.24443)
 - **Code Repository:** [https://github.com/step-out/NativeSeg](https://github.com/step-out/NativeSeg)
 - **Pretrained Weights:** [https://huggingface.co/ChengqianMa/NativeSeg](https://huggingface.co/ChengqianMa/NativeSeg)
 
